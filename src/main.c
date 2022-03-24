@@ -6,6 +6,10 @@
 #pragma comment(lib, "Credui.lib")
 #pragma comment(lib, "advapi32.lib")
 
+// Credits to reenz0h (twitter: @sektor7net), who initialy implemented this technique using Powershell.
+// Please check out Sektor7 "RED TEAM Operator: Privilege Escalation in Windows course" where this technique is described:
+// https://institute.sektor7.net/rto-lpe-windows
+
 // Function skidded from:
 // https://stackoverflow.com/questions/24968541/how-to-get-the-domain-of-currently-logged-on-user-in-windows
 BOOL GetCurrentUserAndDomain(PTSTR szUser, PDWORD pcchUser, PTSTR szDomain, PDWORD pcchDomain) {
