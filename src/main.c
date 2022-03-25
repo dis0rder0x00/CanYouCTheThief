@@ -84,7 +84,7 @@ int main() {
     // Get username and domain
     DWORD chUser = sizeof(user), chDomain = sizeof(domain);
     if (GetCurrentUserAndDomain(user, &chUser, domain, &chDomain)){
-        sprintf(pszName, "%s\\%s", domain, user);
+        wsprintf(pszName, L"%s\\%s", domain, user);
 
         dwErr = CredUIPromptForCredentials(
                 &cui,
